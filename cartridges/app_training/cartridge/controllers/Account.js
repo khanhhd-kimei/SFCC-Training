@@ -105,7 +105,7 @@ server.replace(
         var credentials = authenticatedCustomerProfile.getCredentials();
         if (credentials.isEnabled()) {
             Transaction.wrap(function () {
-                customerLoginResult.authenticatedCustomer = CustomerMgr.loginExternallyAuthenticatedCustomer('NCRAccount', customerLoginResult.KaiinNo, false);
+                customerLoginResult.authenticatedCustomer = CustomerMgr.loginExternallyAuthenticatedCustomer('NCRAccount', customerLoginResult.KaiinNo, rememberMe);
             });
         }
 
