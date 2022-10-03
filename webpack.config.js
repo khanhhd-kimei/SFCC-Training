@@ -60,7 +60,8 @@ module.exports = [{
                     loader: 'css-loader',
                     options: {
                         url: false,
-                        minimize: true
+                        sourceMap: true,
+                        minimize: false
                     }
                 }, {
                     loader: 'postcss-loader',
@@ -72,9 +73,12 @@ module.exports = [{
                 }, {
                     loader: 'sass-loader',
                     options: {
+                        sourceMap: true,
                         includePaths: [
                             path.resolve('node_modules'),
-                            path.resolve('node_modules/flag-icon-css/sass')
+                            path.resolve('node_modules/flag-icon-css/sass'),
+                            path.resolve('./cartridges/app_storefront_base'),
+                            path.resolve('./cartridges/app_training')
                         ]
                     }
                 }]

@@ -33,7 +33,7 @@
     "build:isml": "./node_modules/.bin/isml-linter --build",
     "fix:isml": "./node_modules/.bin/isml-linter --autofix",
     "upload": "sgmf-scripts --upload",
-    "uploadCartridge": "sgmf-scripts --uploadCartridge app_storefront_base && sgmf-scripts --uploadCartridge modules && sgmf-scripts --uploadCartridge bm_app_storefront_base",
+    "uploadCartridge": "sgmf-scripts --uploadCartridge app_storefront_base && sgmf-scripts --uploadCartridge modules && sgmf-scripts --uploadCartridge bm_app_storefront_base && sgmf-scripts --uploadCartridge app_training",
     "watch": "sgmf-scripts --watch",
     "watch:static": "sgmf-scripts --watch static",
     "release": "node bin/Makefile release --"
@@ -108,7 +108,8 @@
     "cleave.js": "^1.5.3",
     "flag-icon-css": "^2.9.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1"
   },
   "browserslist": [
     "last 2 versions",
@@ -125,5 +126,9 @@
       "pre-commit": "npm run lint",
       "pre-push": "npm run test"
     }
+  },
+  "paths": {
+    "base": "./cartridges/app_storefront_base",
+    "training": "./cartridges/app_training"
   }
 }

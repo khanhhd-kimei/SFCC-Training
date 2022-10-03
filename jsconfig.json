@@ -1,0 +1,23 @@
+{
+    "compilerOptions":
+    {
+        "noLib": true,
+        "target": "es5",
+        "baseUrl": "./",
+        "paths":
+        {
+            "*": ["./*", "modules/*", "/Users/khanhhd/WorkSpace/Ruby/SourceCode/dw-api-types/*"]
+        }
+    },
+    "typeAcquisition":
+    {
+        "enable": true
+    },
+    "include": [
+        "/Users/khanhhd/WorkSpace/Ruby/SourceCode/dw-api-types/*.d.ts",
+        "/Users/khanhhd/WorkSpace/Ruby/SourceCode/dw-api-types/**/*.d.ts",
+        "./cartridges/*/cartridge/scripts/**/*.js",
+        "./cartridges/*/cartridge/controllers/**/*.js",
+        "./modules/**/*.js"
+    ]
+}

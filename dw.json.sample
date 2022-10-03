@@ -1,0 +1,36 @@
+{
+    "hostname": "zygo-005.sandbox.us01.dx.commercecloud.salesforce.com",
+    "username": "username",
+    "password": "password",
+
+    "code-version": "SFRA_AP_27_09_2022",
+    "cartridge": [
+      "app_storefront_base",
+      "app_training",
+      "bm_app_storefront_base",
+      "modules"
+    ],
+    "cartridgePath": "app_training:app_storefront_base",
+
+    "file-upload": true,
+    "cartridge-upload": true,
+    "directory-create": true,
+    "file-delete": true,
+
+    "clientId": "client-id-ask-administrator",
+    "clientPassword": "client-password",
+
+    "instances": {
+      "dev005": {
+        "hostname": "zygo-005.sandbox.us01.dx.commercecloud.salesforce.com",
+        "webdav": "zygo-005.sandbox.us01.dx.commercecloud.salesforce.com",
+        "key": "./user.key",
+        "cert": "./user.pem",
+        "ca": "./staging.cert"
+      }
+    },
+
+    "passphrase": "S2ltZWlHbG9iYWw=",
+    "ciphers": "ALL",
+    "secureProtocol": "TLSv1_2_method"
+}
